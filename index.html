@@ -27,18 +27,27 @@
             <form class="form" name="theform" action="/">
               <div class="input-field">
                 <label for="name" class="input-field__label">Имя</label>
-                <input onkeyup="checkform()" autocomplete="on" type="text" required class="input-field__input" id="name" placeholder="Ваше полное имя" />
-                <div class="input-field__error-txt">Error text</div>
+                <input onkeyup="checkform()" autocomplete="off" type="text" required class="input-field__input" id="name" placeholder="Ваше полное имя" />
+                <div class="error">
+                  <span class="input-field__error-img"></span>
+                  <div class="input-field__error-txt">Error text</div>
+                </div>
               </div>
               <div class="input-field">
                 <label for="name" class="input-field__label">Email</label>
-                <input onkeyup="checkform()" autocomplete="on" type="email" required class="input-field__input" id="name" placeholder="example@example.com" />
+                <input onkeyup="checkform()" autocomplete="off" type="email" required class="input-field__input" id="name" placeholder="example@example.com" />
                 <div class="input-field__error-txt">Error text</div>
+                <div class="error">
+                  <span class="input-field__error-img"></span>
+                </div>
               </div>
               <div class="input-field">
                 <label for="name" class="input-field__label">Номер телефона</label>
-                <input onkeyup="checkform()" autocomplete="on" type="number" class="input-field__input" id="name" placeholder="+994 55 555 55 55" required />
-                <div class="input-field__error-txt">Error text</div>
+                <input onkeyup="checkform()" autocomplete="off" type="number" class="input-field__input" id="name" placeholder="+994 55 555 55 55" required />
+                <div class="error">
+                  <span class="input-field__error-img"></span>
+                  <div class="input-field__error-txt">Error text</div>
+                </div>
               </div>
             </form>
             <button disabled class="form__btn btn">Отправить</button>

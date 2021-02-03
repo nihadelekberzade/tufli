@@ -1,0 +1,90 @@
+.header {
+  background-color: #ffdfd0;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 0 10px;
+  }
+  &__logo {
+    font-size: 24px;
+    letter-spacing: 0.04em;
+  }
+  &__contact {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 4.97px;
+    border-bottom: 1px solid #272727;
+  }
+}
+.hero {
+  padding-top: 111px;
+  padding-bottom: 111px;
+  &__title {
+    font-size: 48px;
+    letter-spacing: 4%;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    font-size: 18px;
+    letter-spacing: 4%;
+    margin-bottom: 50px;
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__first {
+    min-width: 378px;
+    max-width: 478px;
+    margin-bottom: 40px;
+  }
+  &__img {
+    min-width: 200px;
+    max-width: 570px;
+  }
+  .form {
+    .input-field {
+      margin-bottom: 21px;
+      width: 100%;
+      max-width: 370px;
+      &__label {
+        font-size: 12px;
+        margin-bottom: 6px;
+      }
+      &__input {
+        border: 1px solid rgba(122, 122, 122, 0.4);
+        border-radius: 4px;
+        padding: 15.7px 0 18.5px 16px;
+        width: 100%;
+
+        &:focus {
+          border-color: #0094ff;
+        }
+        &:focus:invalid {
+          border-color: red;
+        }
+      }
+    }
+  }
+}
+.footer {
+  background-color: #ffdfd0;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0 17px;
+  }
+  &__with-love {
+    a {
+      border-bottom: 1px solid #272727;
+    }
+  }
+}

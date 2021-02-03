@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #272727;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.btn {
+  font-size: 14px;
+  letter-spacing: 4%;
+  padding: 16px 24px;
+  color: #fff;
+  background-color: #008d78;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+input,
+button {
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+input {
+  color: inherit;
+  display: block;
+}

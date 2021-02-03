@@ -47,9 +47,10 @@
   }
   .form {
     .input-field {
-      margin-bottom: 21px;
+      margin-bottom: 30px;
       width: 100%;
       max-width: 370px;
+      position: relative;
       &__label {
         display: inline-block;
         font-size: 12px;
@@ -61,15 +62,30 @@
         padding: 15.7px 0 18.5px 16px;
         width: 100%;
         box-shadow: 0px 2px 4px rgba(122, 122, 122, 0.16);
+        margin-bottom: 4px;
         &:focus {
           border-color: #0094ff;
         }
         &:focus:invalid {
           border-color: red;
         }
+        &:focus:invalid + .input-field__error-txt {
+          opacity: 1;
+          visibility: visible;
+        }
         &:not(:placeholder-shown) {
           border: 1px solid #7a7a7a;
         }
+      }
+      &__error-txt {
+        transition: 0.4s;
+        color: #d91f4b;
+        font-size: 12px;
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        opacity: 0;
+        visibility: hidden;
       }
     }
   }

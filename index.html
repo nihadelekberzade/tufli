@@ -24,24 +24,24 @@
             <h1 class="hero__title">Отправить заявку на заказ</h1>
             <p class="hero__subtitle">Отправленную вами форму рассмотрят наши менеджеры и ответят в течении 24 часов</p>
 
-            <form class="form" action="/">
+            <form class="form" name="theform" action="/">
               <div class="input-field">
                 <label for="name" class="input-field__label">Имя</label>
-                <input autocomplete="off" type="text" required class="input-field__input" id="name" placeholder="Ваше полное имя" />
+                <input onkeyup="checkform()" autocomplete="on" type="text" required class="input-field__input" id="name" placeholder="Ваше полное имя" />
                 <div class="input-field__error-txt">Error text</div>
               </div>
               <div class="input-field">
                 <label for="name" class="input-field__label">Email</label>
-                <input autocomplete="off" type="email" required class="input-field__input" id="name" placeholder="example@example.com" />
+                <input onkeyup="checkform()" autocomplete="on" type="email" required class="input-field__input" id="name" placeholder="example@example.com" />
                 <div class="input-field__error-txt">Error text</div>
               </div>
               <div class="input-field">
                 <label for="name" class="input-field__label">Номер телефона</label>
-                <input autocomplete="off" type="number" class="input-field__input" id="name" placeholder="+994 55 555 55 55" required />
+                <input onkeyup="checkform()" autocomplete="on" type="number" class="input-field__input" id="name" placeholder="+994 55 555 55 55" required />
                 <div class="input-field__error-txt">Error text</div>
               </div>
-              <button disabled class="form__btn btn">Отправить</button>
             </form>
+            <button disabled class="form__btn btn">Отправить</button>
           </div>
           <img class="hero__img" src="./image 1.png" alt="hero img" />
         </div>
@@ -58,5 +58,19 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function checkform() {
+        var f = document.forms["theform"].elements;
+        var cansubmit = true;
+        for (var i = 0; i < f.length; i++) {
+          console.log(f[i].value);
+          if (f[i].value.length == 0) cansubmit = false;
+        }
+        console.log("salam", cansubmit);
+        document.querySelector(".form__btn").disabled = !cansubmit;
+      }
+      window.onload = checkform;
+    </script>
   </body>
 </html>

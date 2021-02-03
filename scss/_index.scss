@@ -22,10 +22,12 @@
   padding-bottom: 111px;
   &__title {
     font-size: 48px;
+    letter-spacing: 4%;
     margin-bottom: 20px;
   }
   &__subtitle {
     font-size: 18px;
+    letter-spacing: 4%;
     margin-bottom: 50px;
   }
   &__inner {
@@ -44,7 +46,6 @@
   }
   &__img {
     min-width: 200px;
-    max-width: 570px;
   }
   .form {
     .input-field {
@@ -52,7 +53,6 @@
       width: 100%;
       max-width: 370px;
       &__label {
-        display: inline-block;
         font-size: 12px;
         margin-bottom: 6px;
       }

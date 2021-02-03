@@ -21,18 +21,20 @@ body {
 }
 .btn {
   font-size: 14px;
-  letter-spacing: 4%;
   padding: 16px 24px;
   color: #fff;
   background-color: #00aa91;
   cursor: pointer;
   border-radius: 4px;
-  &:hover {
+  &:not(:disabled) {
     box-shadow: 0px 4px 8px rgba(0, 141, 120, 0.4);
   }
   &:hover,
   &:active {
     background-color: #008d78;
+  }
+  &:disabled {
+    background-color: #d4e0e8;
   }
 }
 ul,

@@ -23,7 +23,6 @@
           <div class="hero__first">
             <h1 class="hero__title">Отправить заявку на заказ</h1>
             <p class="hero__subtitle">Отправленную вами форму рассмотрят наши менеджеры и ответят в течении 24 часов</p>
-
             <form class="form" name="theform" action="/">
               <div class="input-field">
                 <label for="name" class="input-field__label">Имя</label>
@@ -38,7 +37,7 @@
                 <input onkeyup="checkform()" autocomplete="off" type="email" required class="input-field__input" id="name" placeholder="example@example.com" />
                 <div class="error">
                   <span class="input-field__error-img"></span>
-                <div class="input-field__error-txt">Error text</div>
+                  <div class="input-field__error-txt">Error text</div>
                 </div>
               </div>
               <div class="input-field">
@@ -76,7 +75,6 @@
           console.log(f[i].value);
           if (f[i].value.length == 0) cansubmit = false;
         }
-        console.log("salam", cansubmit);
         document.querySelector(".form__btn").disabled = !cansubmit;
       }
       window.onload = checkform;

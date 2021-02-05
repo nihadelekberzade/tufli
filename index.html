@@ -20,7 +20,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero__inner">
-          <div class="hero__first">
+          <div class="hero__content">
             <h1 class="hero__title">Отправить заявку на заказ</h1>
             <p class="hero__subtitle">Отправленную вами форму рассмотрят наши менеджеры и ответят в течении 24 часов</p>
             <form class="form" name="theform" action="/">
@@ -66,18 +66,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      function checkform() {
-        var f = document.forms["theform"].elements;
-        var cansubmit = true;
-        for (var i = 0; i < f.length; i++) {
-          console.log(f[i].value);
-          if (f[i].value.length == 0) cansubmit = false;
-        }
-        document.querySelector(".form__btn").disabled = !cansubmit;
-      }
-      window.onload = checkform;
-    </script>
   </body>
 </html>

@@ -17,54 +17,64 @@
         </div>
       </div>
     </header>
-    <section class="hero">
-      <div class="container">
-        <div class="hero__inner">
-          <div class="hero__content">
-            <h1 class="hero__title">Отправить заявку на заказ</h1>
-            <p class="hero__subtitle">Отправленную вами форму рассмотрят наши менеджеры и ответят в течении 24 часов</p>
-            <form class="form" name="theform" action="/">
-              <div class="input-field">
-                <label for="name" class="input-field__label">Имя</label>
-                <input onkeyup="checkform()" autocomplete="off" type="text" required class="input-field__input" id="name" placeholder="Ваше полное имя" />
-                <div class="error">
-                  <span class="input-field__error-img"></span>
-                  <div class="input-field__error-txt">Error text</div>
+    <div class="layout">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h1 class="hero__title">Отправить заявку на заказ</h1>
+              <p class="hero__subtitle">Отправленную вами форму рассмотрят наши менеджеры и ответят в течении 24 часов</p>
+              <form class="form" name="theform" action="/">
+                <div class="input-field">
+                  <label for="name" class="input-field__label">Имя</label>
+                  <input onkeyup="checkform()" autocomplete="off" type="text" required class="input-field__input" id="name" placeholder="Ваше полное имя" />
+                  <div class="error">
+                    <span class="input-field__error-img"></span>
+                    <div class="input-field__error-txt">Error text</div>
+                  </div>
                 </div>
-              </div>
-              <div class="input-field">
-                <label for="name" class="input-field__label">Email</label>
-                <input onkeyup="checkform()" autocomplete="off" type="email" required class="input-field__input" id="name" placeholder="example@example.com" />
-                <div class="error">
-                  <span class="input-field__error-img"></span>
-                  <div class="input-field__error-txt">Error text</div>
+                <div class="input-field">
+                  <label for="name" class="input-field__label">Email</label>
+                  <input
+                    onkeyup="checkform()"
+                    autocomplete="off"
+                    type="email"
+                    required
+                    class="input-field__input"
+                    id="name"
+                    placeholder="example@example.com"
+                  />
+                  <div class="error">
+                    <span class="input-field__error-img"></span>
+                    <div class="input-field__error-txt">Error text</div>
+                  </div>
                 </div>
-              </div>
-              <div class="input-field">
-                <label for="name" class="input-field__label">Номер телефона</label>
-                <input onkeyup="checkform()" autocomplete="off" type="number" class="input-field__input" id="name" placeholder="+994 55 555 55 55" required />
-                <div class="error">
-                  <span class="input-field__error-img"></span>
-                  <div class="input-field__error-txt">Error text</div>
+                <div class="input-field">
+                  <label for="name" class="input-field__label">Номер телефона</label>
+                  <input onkeyup="checkform()" autocomplete="off" type="number" class="input-field__input" id="name" placeholder="+994 55 555 55 55" required />
+                  <div class="error">
+                    <span class="input-field__error-img"></span>
+                    <div class="input-field__error-txt">Error text</div>
+                  </div>
                 </div>
-              </div>
-            </form>
-            <button disabled class="form__btn btn">Отправить</button>
+              </form>
+              <button disabled class="form__btn btn">Отправить</button>
+            </div>
+            <img class="hero__img" src="./image 1.png" alt="hero img" />
           </div>
-          <img class="hero__img" src="./image 1.png" alt="hero img" />
         </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <p class="footer__date">2020</p>
-          <p class="footer__with-love">
-            Сделано
-            <a href="/"> с любовью </a>
-          </p>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <p class="footer__date">2020</p>
+            <p class="footer__with-love">
+              Сделано
+              <a href="/"> с любовью </a>
+            </p>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
